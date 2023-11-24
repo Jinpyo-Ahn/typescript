@@ -131,3 +131,6 @@ dist
 
 # .gitignore 파일
 *.idea
+
+# .idea 파일
+.idea

@@ -10,8 +10,7 @@ function fetchTodoItems() {
 }
 // crud methods
 function fetchTodos() {
-    var todos = fetchTodoItems();
-    return todos;
+    return fetchTodoItems();
 }
 function addTodo(todo) {
     todoItems.push(todo);
