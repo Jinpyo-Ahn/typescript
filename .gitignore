@@ -134,3 +134,6 @@ dist
 
 # .idea 파일
 .idea
+
+# .js 파일
+*.js
