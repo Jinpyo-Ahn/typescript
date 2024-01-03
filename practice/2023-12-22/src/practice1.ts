@@ -36,16 +36,16 @@
 // console.log(b);
 
 // 동민
-const log = console.log;
-
-function stringToSlug(message: string): string {
-  return message.split(" ").join("-").toLowerCase();
-  // const words: string = input.replace( /\s/g,"-");
-  // const words: string = input.replace(" ","-");
-}
-
-const result: string = stringToSlug("Hello my name is Dongmin 2023");
-log(result); // or slug
+// const log = console.log;
+//
+// function stringToSlug(message: string): string {
+//   return message.split(" ").join("-").toLowerCase();
+//   // const words: string = input.replace( /\s/g,"-");
+//   // const words: string = input.replace(" ","-");
+// }
+//
+// const result: string = stringToSlug("Hello my name is Dongmin 2023");
+// log(result); // or slug
 
 // 제공하는 기본 메서드를 알아야 한다. -> 정규표현식보다 기본에...
 /**
