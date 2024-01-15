@@ -21,36 +21,21 @@ type ProfessorId = string;
 type EmployeeId = string;
 
 class Person {
-  #id: string;
-  #name: string;
-  #tel: string;
-  #email: string;
+  protected id: string;
+  protected name: string;
+  protected tel: string;
+  protected email: string;
 
-  public get id(): string {
-    return this.#id;
-  }
-
-  public get name(): string {
-    return this.#name;
-  }
-
-  public get tel(): string {
-    return this.#tel;
-  }
-
-  public get email(): string {
-    return this.#email;
-  }
 
   constructor(id: string, name: string, tel: string, email: string) {
-    this.#id = id;
-    this.#name = name;
-    this.#tel = tel;
-    this.#email = email;
+    this.id = id;
+    this.name = name;
+    this.tel = tel;
+    this.email = email;
   }
 
   protected info(): { id: string, name: string, tel: string, email: string } {
-    return {id: this.#id, name: this.#name, tel: this.#tel, email: this.#email};
+    return {id: this.id, name: this.name, tel: this.tel, email: this.email};
   }
 }
 
@@ -97,12 +82,12 @@ class Employee extends Person {
 const professor = new Professor('1', '교수님', '010-4891-400', 'wlsvy@name', 'WiSoft');
 const employee = new Employee('2', '조교님', '010-1234-1234', 'rytnsla@nam', 'N5-404');
 
-console.log(professor.info());
-console.log(employee.info());
+// console.log(professor.info());
+// console.log(employee.info());
 
 // 출력 형식 맞추기
-// type Generic = Person & (Professor | Employee);
-//
+type Generic = Person & (Professor | Employee);
+
 // function printInfo<T extends Generic>(person: T): void {
 //   console.log(
 //     `ID: ${person.id} Name: ${person.name} Tel: ${person.tel} Email: ${person.email}`,
@@ -112,6 +97,5 @@ console.log(employee.info());
 //   )
 // }
 //
-// printInfo(professor);
-// printInfo(employee);
-
+// printInfo(professor.info());
+// printInfo(employee.info());
