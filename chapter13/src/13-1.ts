@@ -30,11 +30,11 @@
 //
 // shuffleBooks();
 
-interface Books {
-  shuffle: Function;
-}
-
-function shuffleBooks(books: Books | null) {
-  const result = books!.shuffle();
-  return result;
-}
+// interface Books {
+//   shuffle: Function;
+// }
+//
+// function shuffleBooks(books: Books | null) {
+//   const result = books!.shuffle();
+//   return result;
+// }

@@ -12,7 +12,6 @@
 // console.log(capt.name);
 // capt.name = '헐크';
 // console.log(capt.name);
-
 // class WaterPurifier {
 //   waterAmount: number;
 //
@@ -31,7 +30,6 @@
 // purifier.wash();
 // purifier.waterAmount = 0;
 // purifier.wash();
-
 // class WaterPurifier {
 //   public waterAmount: number;
 //
@@ -49,7 +47,6 @@
 // const purifier = new WaterPurifier(50);
 // console.log(purifier.waterAmount);
 // purifier.wash();
-
 // class Person {
 //   private name: string;
 //   private skill: string;
@@ -66,7 +63,6 @@
 //
 // const hulk = new Person('헐크', '소리치기');
 // console.log(hulk.name);
-
 // class Person {
 //   private name: string;
 //   private skill: string;
@@ -97,26 +93,21 @@
 //
 // const hulk = new Developer('헐크', '자바스크립트');
 // hulk.
-
-class WaterPurifier {
-  private waterAmount: number;
-
-  constructor(waterAmount: number) {
-    this.waterAmount = waterAmount;
-  }
-
-  public wash() {
-    if(this.waterAmount > 0) {
-      console.log('정수기 정상 동작');
+var WaterPurifier = /** @class */ (function () {
+    function WaterPurifier(waterAmount) {
+        this.waterAmount = waterAmount;
     }
-  }
-}
-
-const purifier = new WaterPurifier(30);
+    WaterPurifier.prototype.wash = function () {
+        if (this.waterAmount > 0) {
+            console.log('정수기 정상 동작');
+        }
+    };
+    return WaterPurifier;
+}());
+var purifier = new WaterPurifier(30);
 purifier.wash();
 purifier.waterAmount = 0;
 purifier.wash();
-
 // class WaterPurifier {
 //   #waterAmount: number;
 //

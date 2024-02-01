@@ -1,5 +1,5 @@
 /**
- * 'https://jsonplaceholder.typicode.com/todos/1'
+ * 'https://jsonplaceholder.typicode.com/users/1'
  * 위 주소를 호출하여 주소에 해당하는 데이터를 반환하는 함수를 만드시오.
  * 단, 반환 값의 데이터 타입을 지정해야 한다.
  * 힌트: 인터페이스와 타입을 용도에 맞게 사용하시오.
