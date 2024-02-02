@@ -6,10 +6,10 @@ module.exports = {
     jest: true,
   },
   extends: [
-    'plugin:@typescript-eslint/eslint-recommended',
-    'plugin:@typescript-eslint/recommended',
+    'plugin:@seminar-eslint/eslint-recommended',
+    'plugin:@seminar-eslint/recommended',
   ],
-  plugins: ['prettier', '@typescript-eslint'],
+  plugins: ['prettier', '@seminar-eslint'],
   rules: {
     'prettier/prettier': [
       'error',
@@ -23,11 +23,11 @@ module.exports = {
         arrowParens: 'avoid',
       },
     ],
-    // '@typescript-eslint/no-explicit-any': 'off',
-    // "@typescript-eslint/explicit-function-return-type": 'off',
+    // '@seminar-eslint/no-explicit-any': 'off',
+    // "@seminar-eslint/explicit-function-return-type": 'off',
     'prefer-const': 'off',
   },
   parserOptions: {
-    parser: '@typescript-eslint/parser',
+    parser: '@seminar-eslint/parser',
   },
 };
