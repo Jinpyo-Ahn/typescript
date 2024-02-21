@@ -1,5 +1,5 @@
-import {printMenu} from "@/print-menu";
-import {orderMenu} from "@/order-menu";
+import {printMenu} from "./print-menu";
+import {orderMenu} from "./order-menu";
 
 export const log = console.log;
 
